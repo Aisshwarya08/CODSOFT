@@ -1,0 +1,29 @@
+a=int(input("enter first number: "))
+b=int(input("enter second number: "))
+
+
+    print("SELECT ANY ONE OPERATOR: \n"
+      "1. ADDITION \n"
+      "2. SUBTRACTION \n"
+      "3. MULTIPLICATION \n"
+      "4. DIVISION \n"
+      "5. MODULUS \n" )
+
+
+op=int(input("select operator: "))
+
+if op== 1:
+    print(a+b)
+elif op== 2:
+    print(a-b)
+elif op== 3:
+    print(a*b)
+elif op== 4:
+    print(a/b)
+elif op== 5:
+    print(a%b)
+else:
+    print("YOU'VE CHOSED WRONG OPEREATOR!!!")
+
+
+print("YAYY!! YOU'VE SUCCESSFULLY DONE THE OPERATION")
