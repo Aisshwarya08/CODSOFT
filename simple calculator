@@ -1,29 +1,45 @@
+def add(a,b):
+    return a+b
+def sub(a,b):
+    return a-b
+
+def multi(a,b):
+    return a*b
+
+def div(a,b):
+    return a/b
+
+def mod(a,b):
+    return a%b
+
+
+
+print("SELECT ANY ONE OPTION:")
+print("-------------------------------")
+print("1. ADDITION")
+print("2  SUBTRATION")
+print("3. MULTIPLICATION")
+print("4. DIVISION")
+print("5. MODULUS")
+
+op = input("select operator: ")
+
 a=int(input("enter first number: "))
 b=int(input("enter second number: "))
 
 
-    print("SELECT ANY ONE OPERATOR: \n"
-      "1. ADDITION \n"
-      "2. SUBTRACTION \n"
-      "3. MULTIPLICATION \n"
-      "4. DIVISION \n"
-      "5. MODULUS \n" )
-
-
-op=int(input("select operator: "))
-
-if op== 1:
-    print(a+b)
-elif op== 2:
-    print(a-b)
-elif op== 3:
-    print(a*b)
-elif op== 4:
-    print(a/b)
-elif op== 5:
-    print(a%b)
+if op== '1':
+    print(add(a,b))
+elif op== '2':
+    print(sub(a,b))
+elif op== '3':
+    print(multi(a,b))
+elif op== '4':
+    print(div(a,b))
+elif op== '5':
+    print(mod(a,b))
 else:
     print("YOU'VE CHOSED WRONG OPEREATOR!!!")
 
+print("YOU'VE SUCCESFULLLY DONE YOUR CALCULATIONS")
 
-print("YAYY!! YOU'VE SUCCESSFULLY DONE THE OPERATION")
